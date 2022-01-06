@@ -1,5 +1,5 @@
 ---
-name: Publish npm package
+name: Publish npm package (npm.pkg.github.com)
 
 on:
   release:
