@@ -5,12 +5,7 @@ declare global {
   namespace jest {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     interface Matchers<R> {
-      toContainPixel(
-        startIndex: number,
-        color: { r: number; g: number; b: number; a: number },
-      ): jest.CustomMatcherResult;
-
-      toRespondWith(statusCode: number): Promise<jest.CustomMatcherResult>;
+      // Put custom matchers here
     }
   }
 }
