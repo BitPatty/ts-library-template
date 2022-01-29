@@ -5,10 +5,6 @@ networks:
     name: ts-library-template-network
     driver: bridge
 
-volumes:
-  ts-library-template-minio__data:
-    driver: local
-
 services:
   application:
     container_name: ts-library-template
