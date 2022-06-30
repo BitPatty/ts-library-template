@@ -11,9 +11,7 @@ export default (): Config.InitialOptions => {
     globals: {
       'ts-jest': {
         compiler: 'ttypescript',
-        astTransformers: {
-          before: ['./test/ts-jest-keys-transformer.js'],
-        },
+        tsconfig: 'tsconfig.json',
       },
     },
   };
