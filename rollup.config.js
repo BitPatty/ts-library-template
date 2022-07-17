@@ -45,7 +45,6 @@ export default [
         transformers,
         tsconfigOverride: {
           compilerOptions: {
-            outDir: 'dist/cjs',
             declaration: false,
           },
         },
@@ -73,7 +72,6 @@ export default [
         transformers,
         tsconfigOverride: {
           compilerOptions: {
-            outDir: 'dist/esm',
             declaration: false,
           },
         },
@@ -97,7 +95,6 @@ export default [
         transformers,
         tsconfigOverride: {
           compilerOptions: {
-            outDir: 'dist/types',
             declaration: true,
             emitDeclarationOnly: true,
           },
