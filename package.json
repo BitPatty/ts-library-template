@@ -47,7 +47,7 @@
     "npm-check-updates": "15.3.4",
     "prettier": "2.7.1",
     "rimraf": "3.0.2",
-    "rollup": "2.77.0",
+    "rollup": "2.77.2",
     "rollup-plugin-typescript2": "0.32.1",
     "ts-jest": "28.0.7",
     "ts-nameof": "5.0.0",
