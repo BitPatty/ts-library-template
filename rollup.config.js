@@ -16,7 +16,7 @@ const transformers = [
 
 const createPackageJson = {
   writeBundle: (opts) => {
-    if (!['es', 'cjs'].includes(opts.format)) return;
+    if (!['es', 'cjs'].includes(opts.format) || opts.file === pkg.types) return;
     const dirName = path.join(__dirname, path.dirname(opts.file));
     const output = JSON.stringify({
       type: opts.format === 'es' ? 'module' : 'commonjs',
@@ -37,25 +37,6 @@ export default [
         strict: true,
         compact: false,
       },
-    ],
-    plugins: [
-      typescript({
-        typescript: ttypescript,
-        tsconfig: 'tsconfig.build.json',
-        transformers,
-        tsconfigOverride: {
-          compilerOptions: {
-            declaration: false,
-          },
-        },
-      }),
-      createPackageJson,
-    ],
-    external: [],
-  },
-  {
-    input: 'src/index.ts',
-    output: [
       {
         file: pkg.module,
         format: 'es',
@@ -64,25 +45,6 @@ export default [
         strict: true,
         compact: false,
       },
-    ],
-    plugins: [
-      typescript({
-        typescript: ttypescript,
-        tsconfig: 'tsconfig.build.json',
-        transformers,
-        tsconfigOverride: {
-          compilerOptions: {
-            declaration: false,
-          },
-        },
-      }),
-      createPackageJson,
-    ],
-    external: [],
-  },
-  {
-    input: 'src/index.ts',
-    output: [
       {
         file: pkg.types,
         sourcemap: false,
@@ -92,14 +54,16 @@ export default [
       typescript({
         typescript: ttypescript,
         tsconfig: 'tsconfig.build.json',
+        useTsconfigDeclarationDir: true,
         transformers,
         tsconfigOverride: {
           compilerOptions: {
             declaration: true,
-            emitDeclarationOnly: true,
+            declarationDir: './dist/types',
           },
         },
       }),
+      createPackageJson,
     ],
     external: [],
   },
