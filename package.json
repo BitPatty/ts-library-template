@@ -40,11 +40,11 @@
     "@types/ts-nameof": "4.2.1",
     "@typescript-eslint/eslint-plugin": "5.35.1",
     "@typescript-eslint/parser": "5.35.1",
-    "eslint": "8.22.0",
+    "eslint": "8.23.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-jest": "26.8.7",
     "eslint-plugin-prettier": "4.2.1",
-    "npm-check-updates": "16.0.5",
+    "npm-check-updates": "16.0.6",
     "prettier": "2.7.1",
     "rimraf": "3.0.2",
     "rollup": "2.78.1",
@@ -54,7 +54,7 @@
     "ts-transformer-keys": "0.4.3",
     "tslib": "2.4.0",
     "ttypescript": "1.5.13",
-    "typedoc": "0.23.10",
-    "typescript": "4.7.4"
+    "typedoc": "0.23.11",
+    "typescript": "4.8.2"
   }
 }
