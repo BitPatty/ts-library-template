@@ -1,6 +1,6 @@
-import type { Config } from '@jest/types';
+import type { JestConfigWithTsJest } from 'ts-jest';
 
-export default (): Config.InitialOptions => {
+export default (): JestConfigWithTsJest => {
   return {
     preset: 'ts-jest',
     testEnvironment: 'node',
@@ -8,11 +8,19 @@ export default (): Config.InitialOptions => {
     setupFilesAfterEnv: ['./jest.setup.ts'],
     verbose: true,
     testMatch: ['**/*.test.ts'],
-    globals: {
-      'ts-jest': {
-        compiler: 'ttypescript',
-        tsconfig: 'tsconfig.json',
-      },
+    extensionsToTreatAsEsm: ['.ts'],
+    moduleNameMapper: {
+      '^(\\.{1,2}/.*)\\.js$': '$1',
+    },
+    transform: {
+      '^.+\\.tsx?$': [
+        'ts-jest',
+        {
+          compiler: 'ttypescript',
+          tsconfig: 'tsconfig.json',
+          useESM: true,
+        },
+      ],
     },
   };
 };
