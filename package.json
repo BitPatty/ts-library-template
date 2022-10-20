@@ -26,7 +26,7 @@
     "type": "git",
     "url": "https://github.com/BitPatty/ts-library-template.git"
   },
-  "license": "AGPL-3.0-or-later",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/BitPatty/ts-library-template/issues"
   },
