@@ -2,7 +2,7 @@
   "name": "@bitpatty/ts-library-template",
   "version": "0.0.1",
   "description": "Template repository for my typescript libraries",
-  "author": "Matteias Collet <matteias.collet@bluewin.ch>",
+  "author": "Matteias Collet <matteias.collet@pm.me>",
   "type": "module",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
