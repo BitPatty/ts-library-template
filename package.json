@@ -49,7 +49,7 @@
     "rimraf": "3.0.2",
     "rollup": "3.10.0",
     "rollup-plugin-typescript2": "0.34.1",
-    "ts-jest": "29.0.4",
+    "ts-jest": "29.0.5",
     "ts-nameof": "5.0.0",
     "ts-transformer-keys": "0.4.4",
     "tslib": "2.4.1",
