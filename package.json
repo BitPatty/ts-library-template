@@ -35,7 +35,7 @@
   ],
   "homepage": "https://github.com/BitPatty/ts-library-template#readme",
   "devDependencies": {
-    "@types/jest": "29.4.1",
+    "@types/jest": "29.4.2",
     "@types/node": "18.15.3",
     "@types/ts-nameof": "4.2.2",
     "@typescript-eslint/eslint-plugin": "5.55.0",
