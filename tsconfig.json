@@ -15,7 +15,6 @@
     "noUnusedParameters": true,
     "sourceMap": true,
     "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
     "plugins": [
       {
         "transform": "ts-nameof",
@@ -26,14 +25,6 @@
       }
     ]
   },
-  "include": [
-    "src/**/*",
-    "test/**/*",
-    "./*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "rollup.config.js"
-  ]
+  "include": ["src/**/*", "test/**/*", "./*.ts"],
+  "exclude": ["node_modules", "dist", "rollup.config.js"]
 }
