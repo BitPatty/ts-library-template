@@ -5,7 +5,6 @@ import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 import typescript from 'rollup-plugin-typescript2';
-import ttypescript from 'ttypescript';
 
 import keysTransformer from 'ts-transformer-keys/transformer.js';
 
@@ -52,7 +51,6 @@ export default [
     ],
     plugins: [
       typescript({
-        typescript: ttypescript,
         tsconfig: 'tsconfig.build.json',
         useTsconfigDeclarationDir: true,
         transformers,

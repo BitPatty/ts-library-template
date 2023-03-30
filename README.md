@@ -5,7 +5,7 @@ A template for my typescript libraries with the following components/configurati
 - Development Environment: [VSCode](https://code.visualstudio.com/) / [dev containers](https://code.visualstudio.com/docs/remote/containers) / [Codespaces](https://github.com/features/codespaces)
 - Code analyzer: [eslint](https://eslint.org/)
 - Code formatter: [prettier](https://prettier.io/)
-- Compiler: [ttypescript](https://github.com/cevek/ttypescript)
+- Compiler: [typescript](https://github.com/microsoft/typescript) with [ts-patch](https://github.com/nonara/ts-patch)
 - Bundler: [rollup](https://rollupjs.org/guide/en/)
 - Testing Framework: [jest](https://jestjs.io/)
 - Documentation Generator: [typedoc](https://typedoc.org/)

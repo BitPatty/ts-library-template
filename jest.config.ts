@@ -16,7 +16,6 @@ export default (): JestConfigWithTsJest => {
       '^.+\\.tsx?$': [
         'ts-jest',
         {
-          compiler: 'ttypescript',
           tsconfig: 'tsconfig.json',
           useESM: true,
         },
