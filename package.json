@@ -56,7 +56,7 @@
     "ts-patch": "3.0.0-rc3",
     "ts-transformer-keys": "0.4.4",
     "tslib": "2.5.3",
-    "typedoc": "0.24.7",
+    "typedoc": "0.24.8",
     "typescript": "5.0.4"
   }
 }
