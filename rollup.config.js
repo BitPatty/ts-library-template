@@ -6,13 +6,11 @@ import { fileURLToPath } from 'url';
 
 import typescript from 'rollup-plugin-typescript2';
 
-import keysTransformer from 'ts-transformer-keys/transformer.js';
-
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const transformers = [
-  (service) => ({
-    before: [keysTransformer.default(service.getProgram())],
+  () => ({
+    before: [],
     after: [],
   }),
 ];

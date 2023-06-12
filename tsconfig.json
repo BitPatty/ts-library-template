@@ -15,15 +15,7 @@
     "noUnusedParameters": true,
     "sourceMap": true,
     "strictNullChecks": true,
-    "plugins": [
-      {
-        "transform": "ts-nameof",
-        "type": "raw"
-      },
-      {
-        "transform": "ts-transformer-keys/transformer"
-      }
-    ]
+    "plugins": []
   },
   "include": ["src/**/*", "test/**/*", "./*.ts"],
   "exclude": ["node_modules", "dist", "rollup.config.js"]
