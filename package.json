@@ -37,9 +37,9 @@
   "homepage": "https://github.com/BitPatty/ts-library-template#readme",
   "devDependencies": {
     "@types/jest": "29.5.12",
-    "@types/node": "22.3.0",
-    "@typescript-eslint/eslint-plugin": "8.1.0",
-    "@typescript-eslint/parser": "8.1.0",
+    "@types/node": "22.4.2",
+    "@typescript-eslint/eslint-plugin": "8.2.0",
+    "@typescript-eslint/parser": "8.2.0",
     "eslint": "9.9.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-jest": "28.8.0",
@@ -47,13 +47,13 @@
     "npm-check-updates": "17.0.6",
     "prettier": "3.3.3",
     "rimraf": "6.0.1",
-    "rollup": "4.20.0",
+    "rollup": "4.21.0",
     "rollup-plugin-typescript2": "0.36.0",
     "ts-jest": "29.2.4",
     "ts-node": "10.9.2",
     "ts-patch": "3.2.1",
     "tslib": "2.6.3",
-    "typedoc": "0.26.5",
+    "typedoc": "0.26.6",
     "typescript": "5.5.4"
   }
 }
